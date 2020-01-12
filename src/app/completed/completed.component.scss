@@ -9,6 +9,7 @@
 }
 .text-color {
   color: white;
+  width: 70%;
 }
 .dot-green {
   color: #29ad4a;
@@ -26,6 +27,9 @@
   &:last-child {
     border-bottom: none;
   }
+}
+.hidden{
+  display: none;
 }
 .flex--box {
   display: flex;

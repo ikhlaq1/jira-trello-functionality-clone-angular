@@ -1,6 +1,6 @@
 <ul class="list-group">
     <ng-container *ngFor="let task of tasks">
-        <li *ngIf="task.type == typeOf" class="list-group-item">
+        <li *ngIf="task.type == typeOf" class="list-group-item"  [ngClass]="{ 'hidden': initialState}" >
             <div class="row">
                 <div class="col-9">
                     <div class="flex--box">
@@ -12,10 +12,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3" style="text-align: end;">
                     <select (change)="statusChange($event,task)" [ngClass]="{ 'green': task.status == 1,'blue': task.status == 2,'red': task.status == 3}" class="custom-select text-color">
-                        <option *ngFor="let status of dropDownValues" [selected]="status.id == task.status"
-                            [value]=status.id>{{status.name}}</option>
+                        <option  *ngFor="let status of dropDownValues" [selected]="status.id == task.status"
+                            [value]=status.id>{{status.name}}  </option>
+
                     </select>
                 </div>
             </div>

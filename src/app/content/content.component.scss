@@ -8,6 +8,13 @@
   color: #e8394a;
 }
 
+.list-group {
+  display: none;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
 .tasks-wrap {
   display: flex;
   flex-direction: row;

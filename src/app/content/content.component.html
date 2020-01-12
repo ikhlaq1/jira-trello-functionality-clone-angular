@@ -14,9 +14,9 @@
 
     <ngb-tabset (click)="showContent()" class="user--tabs--container">
             <ngb-tab title="Tasks ({{taskCount}})">
-                <ng-template class="show" ngbTabContent>
+                <ng-template [ngClass]="show" ngbTabContent>
                     <app-tasks (iconChangeEmitter)="updateValue($event)" (updateStatus)="onSubmit($event)"
-                        [tasks]="contentTask" [typeOf]=1 [userColor]=2 [dropDownValues]="contentDropdown"></app-tasks>
+                        [tasks]="contentTask" [initialState]=initialState [typeOf]=1 [userColor]=2 [dropDownValues]="contentDropdown"></app-tasks>
                 </ng-template>
             </ngb-tab>
             <ngb-tab title="Bugs ({{bugsCount}}) ">

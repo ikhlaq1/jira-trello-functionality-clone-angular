@@ -12,7 +12,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3" style="text-align: end;">
                     <select (change)="statusChange($event,task)" [ngClass]="{ 'green': task.status == 1,'blue': task.status == 2,'red': task.status == 3}"  class="custom-select text-color">
                         <!-- <option>{{task?.status}}</option> -->
                         <option *ngFor="let status of dropDownValues" [selected]="status.id == task.status"

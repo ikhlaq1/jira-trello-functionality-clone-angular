@@ -12,8 +12,10 @@ export class TasksComponent implements OnInit {
   @Input() tasks;
   @Input() userColor;
   @Input() dropDownValues;
-  @Input() typeOf
-  @Input() taskType
+  @Input() typeOf;
+  @Input() taskType;
+  @Input() initialState;
+
   @Output() updateStatus= new EventEmitter<boolean>();
   @Output() iconChangeEmitter = new EventEmitter<number>();
   completedCount: any;
