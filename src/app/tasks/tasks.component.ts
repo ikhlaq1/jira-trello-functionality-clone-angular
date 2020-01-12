@@ -48,8 +48,6 @@ export class TasksComponent implements OnInit {
 
   }
   ngOnChanges() {
-    console.log("usercolo",this.userColor)
-    console.log("task",this.tasks)
     this.taskCount = this.tasks.filter(t=>t.type ===1 ).length;
     this.bugCount = this.tasks.filter(t=>t.type ===2 ).length;
     this.completedCount = this.tasks.filter(t=>t.status ===1 ).length;
@@ -61,7 +59,6 @@ export class TasksComponent implements OnInit {
     this.dataService.completedCount$.next(this.completedCount);
     this.dataService.inProgressCount$.next(this.inProgressCount);
     this.dataService.notStartedCount$.next(this.notStartedCount);
-
   }
 
   ngOnInit() {

@@ -1,6 +1,6 @@
-<div class="container">
     <h3>
-        <fa [ngClass]="{ 'dot-green': usericon == 1,'dot-blue': usericon == 2,'dot-red': usericon == 3}" name="user"></fa> User 1
+        <fa [ngClass]="{ 'dot-green': usericon == 1,'dot-blue': usericon == 2,'dot-red': usericon == 3}" name="user">
+        </fa> User 1
     </h3>
 
     <hr>
@@ -13,33 +13,41 @@
         <a class="nav-link " [routerLink]="['/not-started']" routerLinkActive="active">Not Started</a>
     </div> -->
 
-    <ngb-tabset  class="tabset1">
-        <ngb-tab title="Tasks ({{taskCount}})">
-            <ng-template ngbTabContent>
-                <app-tasks  (iconChangeEmitter)="updateValue($event)"  (updateStatus)="onSubmit($event)" [tasks]="contentTask" [typeOf]=1 [userColor]=2  [dropDownValues]="contentDropdown"></app-tasks>
-            </ng-template>
-        </ngb-tab>
-        <ngb-tab title="Bugs ({{bugsCount}}) ">
-            <ng-template ngbTabContent>
-                <app-tasks   (iconChangeEmitter)="updateValue($event)" (updateStatus)="onSubmit($event)" [tasks]="contentTask" [typeOf]=2 [userColor]=3  [dropDownValues]="contentDropdown"></app-tasks>
-            </ng-template>
-        </ngb-tab>
-        <ngb-tab title="Completed ({{completedCount}})">
-            <ng-template ngbTabContent>
-                <app-completed   (iconChangeEmitter)="updateValue($event)" (updateStatus)="onSubmit($event)" [tasks]="contentTask" [typeOf]=1 [userColor]=1 [dropDownValues]="contentDropdown" ></app-completed>
-            </ng-template>
-        </ngb-tab>
-        <ngb-tab title="In progress ({{inProgressCount}})">
-            <ng-template ngbTabContent>
-                    <app-completed  (iconChangeEmitter)="updateValue($event)" (updateStatus)="onSubmit($event)" [tasks]="contentTask" [typeOf]=2  [userColor]=2  [dropDownValues]="contentDropdown" ></app-completed>
-            </ng-template>
-        </ngb-tab>
-        <ngb-tab title="Not Started ({{noStartedCount}})">
-            <ng-template ngbTabContent>
-                    <app-completed  (iconChangeEmitter)="updateValue($event)"  (updateStatus)="onSubmit($event)" [tasks]="contentTask" [typeOf]=3  [userColor]=3 [tasks]="contentTask" [dropDownValues]="contentDropdown" ></app-completed>
-            </ng-template>
-        </ngb-tab>
+    <ngb-tabset (click)="showContent()" class="tabset1">
+            <ngb-tab title="Tasks ({{taskCount}})">
+                <ng-template class="show" ngbTabContent>
+                    <app-tasks (iconChangeEmitter)="updateValue($event)" (updateStatus)="onSubmit($event)"
+                        [tasks]="contentTask" [typeOf]=1 [userColor]=2 [dropDownValues]="contentDropdown"></app-tasks>
+                </ng-template>
+            </ngb-tab>
+            <ngb-tab title="Bugs ({{bugsCount}}) ">
+                <ng-template  ngbTabContent>
+                    <app-tasks (iconChangeEmitter)="updateValue($event)" (updateStatus)="onSubmit($event)"
+                        [tasks]="contentTask" [typeOf]=2 [userColor]=3 [dropDownValues]="contentDropdown"></app-tasks>
+                </ng-template>
+            </ngb-tab>
+            <ngb-tab title="Completed ({{completedCount}})">
+                <ng-template  ngbTabContent>
+                    <app-completed (iconChangeEmitter)="updateValue($event)" (updateStatus)="onSubmit($event)"
+                        [tasks]="contentTask" [typeOf]=1 [userColor]=1 [dropDownValues]="contentDropdown">
+                    </app-completed>
+                </ng-template>
+            </ngb-tab>
+            <ngb-tab title="In progress ({{inProgressCount}})">
+                <ng-template  ngbTabContent>
+                    <app-completed (iconChangeEmitter)="updateValue($event)" (updateStatus)="onSubmit($event)"
+                        [tasks]="contentTask" [typeOf]=2 [userColor]=2 [dropDownValues]="contentDropdown">
+                    </app-completed>
+                </ng-template>
+            </ngb-tab>
+            <ngb-tab title="Not Started ({{noStartedCount}})">
+                <ng-template  ngbTabContent>
+                    <app-completed (iconChangeEmitter)="updateValue($event)" (updateStatus)="onSubmit($event)"
+                        [tasks]="contentTask" [typeOf]=3 [userColor]=3 [tasks]="contentTask"
+                        [dropDownValues]="contentDropdown"></app-completed>
+                </ng-template>
+            </ngb-tab>  
     </ngb-tabset>
 
     <router-outlet></router-outlet>
-</div>
+<!-- </div> -->

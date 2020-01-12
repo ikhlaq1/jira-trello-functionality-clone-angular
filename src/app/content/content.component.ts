@@ -19,6 +19,7 @@ export class ContentComponent implements OnInit, OnDestroy {
   bugsCount: number;
   inProgressCount: number;
   noStartedCount: number;
+  initialState: boolean = true;
   constructor(public dataService: DataServiceService,private changeDetectForColor: ChangeDetectorRef) {
     this.dataService.getTicketFromServer().subscribe(res => {
       this.contentTask = res;
@@ -59,7 +60,10 @@ export class ContentComponent implements OnInit, OnDestroy {
   });
   this.initCount();
   }
-
+  showContent(){
+    console.log('showed')
+    this.initialState = false;
+  }
   initCount(){
   this.sub$ = this.dataService.taskCount$.subscribe(status => {
     console.log(status);
