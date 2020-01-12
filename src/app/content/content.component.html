@@ -1,9 +1,8 @@
-    <h3>
-        <fa [ngClass]="{ 'dot-green': usericon == 1,'dot-blue': usericon == 2,'dot-red': usericon == 3}" name="user">
-        </fa> User 1
-    </h3>
-
-    <hr>
+    <div class="user--info">
+        <h3>
+            <fa [ngClass]="{ 'dot-green': usericon == 1,'dot-blue': usericon == 2,'dot-red': usericon == 3}" name="user"></fa> <span class="name"> User 1</span>
+        </h3>
+    </div>
     <!--     
     <div class="tasks-wrap">
         <a class="nav-link " [routerLink]="['/task']" routerLinkActive="active">Task</a>
@@ -13,7 +12,7 @@
         <a class="nav-link " [routerLink]="['/not-started']" routerLinkActive="active">Not Started</a>
     </div> -->
 
-    <ngb-tabset (click)="showContent()" class="tabset1">
+    <ngb-tabset (click)="showContent()" class="user--tabs--container">
             <ngb-tab title="Tasks ({{taskCount}})">
                 <ng-template class="show" ngbTabContent>
                     <app-tasks (iconChangeEmitter)="updateValue($event)" (updateStatus)="onSubmit($event)"

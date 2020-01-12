@@ -1,29 +1,38 @@
-.dot-green{
-    color:#29AD4A;
+.dot-green {
+  color: #29ad4a;
 }
 .dot-blue {
-    color: #007BFF;
+  color: #007bff;
 }
 .dot-red {
-    color: #E8394A;
+  color: #e8394a;
 }
 
 .tasks-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
 
-    .nav-link {
-       flex-grow: 2;
-       text-align: center;
-       flex-basis: 118px;
-       box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .5);
-    }
-    .active{
-        background: #d0d0d0;
-    }
-   
+  .nav-link {
+    flex-grow: 2;
+    text-align: center;
+    flex-basis: 118px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  }
+  .active {
+    background: #d0d0d0;
+  }
 }
 
+.user--info {
+  padding: 35px 20px 10px;
+  border-bottom: 2px solid #333;
+  margin-bottom: 10px;
+  .name {
+    margin-left: 25px;
+    display: inline-block;
+    font-weight: bold;
+  }
+}

@@ -1,8 +1,43 @@
-body {
-    margin:0px;
-    padding:0px;
-    box-sizing:border-box;
-    background:#354545;
+@font-face {
+    font-family: "Gelasio";
+    src: url("../assets/fonts/Gelasio-SemiBold.woff2") format("woff2"),
+      url("../assets/fonts/Gelasio-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Gelasio";
+    src: url("../assets/fonts/Gelasio-Regular.woff2") format("woff2"),
+      url("../assets/fonts/Gelasio-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Gelasio";
+    src: url("../assets/fonts/Gelasio-Bold.woff2") format("woff2"),
+      url("../assets/fonts/Gelasio-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Gelasio";
+    src: url("../assets/fonts/Gelasio-Medium.woff2") format("woff2"),
+      url("../assets/fonts/Gelasio-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+.app--wrapper {
+    border: 15px solid #e7e7e7;
+}
+
+.left--navigation{
+    padding-left: 0;
+    padding-right: 3px;
+    background-color: #d4d2d2;
 }
 .main_sidebar {
     min-height:100vh;

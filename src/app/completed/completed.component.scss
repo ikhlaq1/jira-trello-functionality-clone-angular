@@ -1,21 +1,40 @@
-.green{
-    background:#29AD4A;
+.green {
+  background: #29ad4a;
 }
 .blue {
-    background: #007BFF;
+  background: #007bff;
 }
 .red {
-    background: #E8394A;
+  background: #e8394a;
 }
-.text-color{
-    color: white;
+.text-color {
+  color: white;
 }
-.dot-green{
-    color:#29AD4A;
+.dot-green {
+  color: #29ad4a;
 }
 .dot-blue {
-    color: #007BFF;
+  color: #007bff;
 }
 .dot-red {
-    color: #E8394A;
+  color: #e8394a;
+}
+.list-group-item {
+  border: none;
+  border-bottom: 2px solid #333;
+  border-radius: 0px;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.flex--box {
+  display: flex;
+  .flex-item-1 {
+    width: 30px;
+  }
+  .flex-item-2 {
+    p {
+      margin: 0px;
+    }
+  }
 }

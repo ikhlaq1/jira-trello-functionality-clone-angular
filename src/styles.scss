@@ -1,10 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
-.green{
-    background:#29AD4A;
+.green {
+  background: #29ad4a;
 }
 .blue {
-    background: #007BFF;
+  background: #007bff;
 }
 .red {
-    background: #E8394A;
+  background: #e8394a;
+}
+body {
+  font-family: "Gelasio" !important;
+}
+
+.user--tabs--container {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  .nav-tabs {
+    margin: 10px 0px;
+    border-bottom: none;
+    .nav-item {
+      margin: 0px;
+      width: 20%;
+      text-align: center;
+    }
+    .nav-link {
+      border: none;
+      padding: 15px;
+      border-radius: 0px;
+      color: #212529;
+      font-weight: 600;
+      transition: all 0.3s;
+      &.active {
+        color: #007bff;
+        background-color: #e9e9e9;
+      }
+      &:hover {
+        color: #007bff;
+        background-color: #e9e9e9;
+      }
+    }
+  }
 }
