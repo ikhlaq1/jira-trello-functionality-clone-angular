@@ -16,7 +16,6 @@
                     <select (change)="statusChange($event,task)" [ngClass]="{ 'green': task.status == 1,'blue': task.status == 2,'red': task.status == 3}" class="custom-select text-color">
                         <option  *ngFor="let status of dropDownValues" [selected]="status.id == task.status"
                             [value]=status.id>{{status.name}}  </option>
-
                     </select>
                 </div>
             </div>

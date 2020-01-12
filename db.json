@@ -9,17 +9,17 @@
   "ticket": [
     {
       "id": 1,
-      "description": "ikhlaq   dolor sit amet, consectetur adipiscing elit. Mauris tempus ligula quis sapien ullamcorper viverra.",
+      "description": "ikhlaq dolor sit amet, consectetur adipiscing elit. Mauris tempus ligula quis sapien ullamcorper viverra.",
       "assignee": 1,
       "type": 2,
       "status": 2
     },
     {
       "id": 2,
-      "description": "ikhlaq task ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus ligula quis sapien ullamcorper viverra.",
+      "description": "ikhlaq2 ipsum dolor sit amet, adipiscing elit. Mauris tempus ligula quis sapien ullamcorper viverra.",
       "assignee": 1,
       "type": 1,
-      "status": 1
+      "status": 3
     },
     {
       "id": 3,
@@ -30,7 +30,7 @@
     },
     {
       "id": 4,
-      "description": "ikhlaq 2 ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus ligula quis sapien ullamcorper viverra.",
+      "description": "ikhlaq 2 ipsum dolor sit amet, elit. Mauris tempus ligula quis sapien ullamcorper viverra.",
       "assignee": 1,
       "type": 1,
       "status": 2
