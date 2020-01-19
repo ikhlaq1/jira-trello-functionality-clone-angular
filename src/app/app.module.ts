@@ -8,7 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { TasksComponent } from './tasks/tasks.component';
-import { CompletedComponent } from './completed/completed.component';
+import { StatusComponent } from './status/status.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
@@ -18,7 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     ContentComponent,
     TasksComponent,
-    CompletedComponent,
+    StatusComponent,
   ],
   imports: [
     BrowserModule,

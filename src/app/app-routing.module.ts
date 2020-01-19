@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 // import { TasksComponent } from './tasks/tasks.component';
-// import { CompletedComponent } from './completed/completed.component';
+// import { StatusComponent } from './status/status.component';
 
 const routes: Routes = [
   
@@ -17,7 +17,7 @@ const routes: Routes = [
   //   component: InprogressComponent
   // }, {
   //   path: 'completed',
-  //   component: CompletedComponent
+  //   component: StatusComponent
   // }, {
   //   path: 'not-started',
   //   component: NotStartedComponent

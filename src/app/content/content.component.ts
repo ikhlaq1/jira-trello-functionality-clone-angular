@@ -85,7 +85,7 @@ export class ContentComponent implements OnInit, OnDestroy {
     console.log(status);
     this.noStartedCount = status;
   });
-  this.changeDetectForColor.detectChanges();
+  // this.changeDetectForColor.detectChanges();
   }
 
   updateCount(){

@@ -27,23 +27,23 @@
             </ngb-tab>
             <ngb-tab title="Completed ({{completedCount}})">
                 <ng-template  ngbTabContent>
-                    <app-completed (iconChangeEmitter)="updateValue($event)" (updateStatus)="onSubmit($event)"
+                    <app-status (iconChangeEmitter)="updateValue($event)" (updateStatus)="onSubmit($event)"
                         [tasks]="contentTask" [typeOf]=1 [userColor]=1 [dropDownValues]="contentDropdown">
-                    </app-completed>
+                    </app-status>
                 </ng-template>
             </ngb-tab>
             <ngb-tab title="In progress ({{inProgressCount}})">
                 <ng-template  ngbTabContent>
-                    <app-completed (iconChangeEmitter)="updateValue($event)" (updateStatus)="onSubmit($event)"
+                    <app-status (iconChangeEmitter)="updateValue($event)" (updateStatus)="onSubmit($event)"
                         [tasks]="contentTask" [typeOf]=2 [userColor]=2 [dropDownValues]="contentDropdown">
-                    </app-completed>
+                    </app-status>
                 </ng-template>
             </ngb-tab>
             <ngb-tab title="Not Started ({{noStartedCount}})">
                 <ng-template  ngbTabContent>
-                    <app-completed (iconChangeEmitter)="updateValue($event)" (updateStatus)="onSubmit($event)"
+                    <app-status (iconChangeEmitter)="updateValue($event)" (updateStatus)="onSubmit($event)"
                         [tasks]="contentTask" [typeOf]=3 [userColor]=3 [tasks]="contentTask"
-                        [dropDownValues]="contentDropdown"></app-completed>
+                        [dropDownValues]="contentDropdown"></app-status>
                 </ng-template>
             </ngb-tab>  
     </ngb-tabset>

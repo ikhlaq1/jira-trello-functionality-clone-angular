@@ -1,11 +1,11 @@
 .green {
-  background: #29ad4a;
+  background-color: #29ad4a;
 }
 .blue {
-  background: #007bff;
+  background-color: #007bff;
 }
 .red {
-  background: #e8394a;
+  background-color: #e8394a;
 }
 .text-color {
   color: white;
@@ -30,10 +30,27 @@ select {
   &:last-child{
     border-bottom: none;
   }
+ 
 }
 .hidden{
   display: none;
 }
+
+
+select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
 .flex--box {
   display: flex;
   .flex-item-1 {
