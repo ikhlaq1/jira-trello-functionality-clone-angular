@@ -21,7 +21,7 @@
     "@angular/router": "^8.2.5",
     "@fortawesome/fontawesome-free": "^5.10.2",
     "@ng-bootstrap/ng-bootstrap": "^5.1.1",
-    "ajv": "^6.9.1",
+    "ajv": "^6.12.3",
     "angular-font-awesome": "^3.1.2",
     "bootstrap": "^4.3.1",
     "concurrently": "^5.0.0",
